@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据展示</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>动态数据展示</h1>
+        <nav>
+            <a href="index.html">首页</a> |
+            <a href="about.html">关于我</a> |
+            <a href="blog.html">博客</a> |
+            <a href="contact.html">联系</a> |
+            <a href="data.html">数据</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>商品销量统计</h2>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>选择</th>
+                            <th>商品名称</th>
+                            <th>销量</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-table-body">
+                        <!-- JS渲染 -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <canvas id="salesChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 我的博客</p>
+    </footer>
+
+    <script src="data.js"></script>
+</body>
+
+</html>
